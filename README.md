@@ -1,3 +1,6 @@
+This repository is just my note that contains important materials and examples I have collected from the internet, covering core concepts and best practices of spring framework.
+
+
 # Spring Framework Core
 
 ## Introduction : IoC and Bean
