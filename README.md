@@ -360,7 +360,9 @@ Spring Security uses a **filter chain** to intercept requests and check if they 
 For example, when a user tries to log in, Spring Security handles the login form submission, authenticates the credentials, and then grants or denies access based on the user’s role.
 
 ### **Spring security core components and flow**
-The image you've shared outlines the security flow for a Spring Security authentication process, starting from `SecurityFilterChain` and interacting with various components like `UserDetailsService`, authentication providers, password encoders, and filters.
+
+![flow](https://github.com/user-attachments/assets/255c0b05-d03f-4c0e-aeeb-94b970164c45)
+*Image from [UCyJ2FBAS2oqK6u-7lX2yCUA](https://youtube.com/@sergey_tech?si=aOkMj_dEy0_pP_Ma)* .
 
 To explain this flow starting from `SecurityFilterChain`:
 
