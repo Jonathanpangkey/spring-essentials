@@ -362,7 +362,7 @@ For example, when a user tries to log in, Spring Security handles the login form
 ### **Spring security core components and flow**
 
 ![flow](https://github.com/user-attachments/assets/255c0b05-d03f-4c0e-aeeb-94b970164c45)
-*Image from [UCyJ2FBAS2oqK6u-7lX2yCUA](https://youtube.com/@sergey_tech?si=aOkMj_dEy0_pP_Ma)* .
+*Image from [Sargey Tech Channel](https://youtube.com/@sergey_tech?si=aOkMj_dEy0_pP_Ma)* .
 
 To explain this flow starting from `SecurityFilterChain`:
 
