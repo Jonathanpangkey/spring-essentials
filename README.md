@@ -25,7 +25,8 @@ Here, the `Car` class is responsible for creating the `Engine` object. This can 
 ### IOC Container Approach (Using Spring)
 In Spring, the **IOC Container** takes care of creating and managing dependencies. You don't manually create the `Engine` object. Instead, you declare them, and Spring injects them automatically.
 
-#### Example: Car and Engine using Spring IOC
+Example: Car and Engine using Spring IOC
+
 1. **Create the `Engine` class:**
 
 ```java
@@ -58,32 +59,6 @@ public class Car {
     public void drive() {
         engine.start();
         System.out.println("Car is driving!");
-    }
-}
-```
-
-3. **Main Application (Spring Boot Example):**
-
-```java
-import org.springframework.boot.CommandLineRunner;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.annotation.Bean;
-
-@SpringBootApplication
-public class CarApplication {
-
-    public static void main(String[] args) {
-        SpringApplication.run(CarApplication.class, args);
-    }
-
-    @Bean
-    public CommandLineRunner run(ApplicationContext context) {
-        return args -> {
-            Car car = context.getBean(Car.class); // Spring provides the Car bean
-            car.drive(); // The car drives and the engine starts automatically
-        };
     }
 }
 ```
